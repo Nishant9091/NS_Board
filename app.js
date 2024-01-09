@@ -22,7 +22,8 @@ io.on("connection", (socket) => {
     socket.on("drawStroke", (data) => {
         io.sockets.emit("drawStroke", data);
     })
+
     socket.on("redoUndo", (data) => {
-        io.socket.emit("redoUndo", data);
+        io.sockets.emit("redoUndo", data);
     })
 })
